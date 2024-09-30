@@ -1,0 +1,229 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* light blue background */
+    color: #333;
+  }
+  
+  header {
+    background-color: #1e90ff; /* blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  /* Styling for Navigation Buttons */
+  .nav-button {
+    background-color: #1e90ff; /* blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #4682b4; /* darker blue */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(120deg, #1e90ff, #87cefa); /* blue gradient */
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .animate-text {
+    animation: fadeIn 2s ease;
+  }
+  
+  /* Call-to-Action Button */
+  .cta-button {
+    background-color: #ff6347; /* red-orange */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff4500; /* darker red-orange */
+  }
+  
+  /* Product Carousel */
+  .product-carousel {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .carousel-item {
+    flex: 0 0 30%;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  button#prev, button#next {
+    background-color: #1e90ff; /* blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 10px;
+  }
+  
+  button#prev:hover, button#next:hover {
+    background-color: #4682b4; /* darker blue */
+  }
+  
+  /* Login Form Styling */
+  .login-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+  }
+  
+  .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e90ff; /* blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4682b4; /* darker blue */
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .forgot-password a {
+    color: #1e90ff; /* blue */
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e90ff; /* blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .product-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+
+.product-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #ff4500;
+}

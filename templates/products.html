@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <title>{{.Name}} - Product Details</title>
+</head>
+<body>
+    <header>
+        <h1>{{.Name}}</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/cart">View Cart</a>
+            <a href="/products">Back to Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="{{.Image}}" alt="{{.Name}}">
+            </div>
+            <div class="product-info">
+                <h2>{{.Name}}</h2>
+                <p class="description">{{.Description}}</p>
+                <p class="price">Price: ${{.Price}}</p>
+                <a href="/add-to-cart?id={{.ID}}" class="add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marvin's Apparel</p>
+    </footer>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>

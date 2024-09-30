@@ -1,0 +1,1 @@
+"# apparel-e-commerce1"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/eddymarvin/apparel-e-commerce1.gitgit push -u origin main
