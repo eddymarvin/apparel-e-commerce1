@@ -99,11 +99,10 @@ func deliveryHandler(w http.ResponseWriter, r *http.Request) {
 func loginHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		// Handle login logic here
-		// Validate user credentials, etc.
 		http.Redirect(w, r, "/products", http.StatusFound)
 		return
 	}
-	tmpl, err := template.ParseFiles("templates/index.html")
+	tmpl, err := template.ParseFiles("templates/login.html")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return

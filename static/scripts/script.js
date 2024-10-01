@@ -35,3 +35,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const products = document.querySelectorAll(".product-card");
+
+    // Simple hover effect to animate product cards
+    products.forEach((product) => {
+        product.addEventListener("mouseover", () => {
+            product.style.transform = "translateY(-10px)";
+            product.style.transition = "transform 0.3s ease";
+        });
+
+        product.addEventListener("mouseout", () => {
+            product.style.transform = "translateY(0)";
+        });
+    });
+
+    // Lazy loading effect (images load when scrolling into view)
+    const productImages = document.querySelectorAll(".product-image img");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.src = entry.target.dataset.src;
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    productImages.forEach((img) => {
+        img.dataset.src = img.src;
+        img.src = ""; // Reset the src for lazy load effect
+        observer.observe(img);
+    });
+});
